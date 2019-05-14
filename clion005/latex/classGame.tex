@@ -1,0 +1,70 @@
+\hypertarget{classGame}{\section{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGame_a0a3902a3296afabb63deb10287205789}{Game} (int lvl, int play\+\_\+level, int play\+\_\+exp, int play\+\_\+score)
+\item 
+\hyperlink{classPlayer}{Player} \hyperlink{classGame_ab5d6f774a2722a4bffd9d1415871b8c7}{get\+Player} () const 
+\item 
+bool \hyperlink{classGame_abda2a003c77c17b87c44ab031060367a}{run} (Render\+Window \&window)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGame_a0a3902a3296afabb63deb10287205789}{\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection[{Game}]{\setlength{\rightskip}{0pt plus 5cm}Game\+::\+Game (
+\begin{DoxyParamCaption}
+\item[{int}]{lvl, }
+\item[{int}]{play\+\_\+level, }
+\item[{int}]{play\+\_\+exp, }
+\item[{int}]{play\+\_\+score}
+\end{DoxyParamCaption}
+)}}\label{classGame_a0a3902a3296afabb63deb10287205789}
+Creates a \hyperlink{classGame}{Game} object able to play a \hyperlink{classLevel}{Level} 
+\begin{DoxyParams}{Parameters}
+{\em lvl} & The level number to play \\
+\hline
+{\em play\+\_\+level} & The starting level of the \hyperlink{classPlayer}{Player} \\
+\hline
+{\em play\+\_\+exp} & The starting experience of the \hyperlink{classPlayer}{Player} \\
+\hline
+{\em play\+\_\+score} & The starting score of the \hyperlink{classPlayer}{Player} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGame_ab5d6f774a2722a4bffd9d1415871b8c7}{\index{Game@{Game}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!Game@{Game}}
+\subsubsection[{get\+Player}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player} Game\+::get\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classGame_ab5d6f774a2722a4bffd9d1415871b8c7}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classPlayer}{Player} object of the \hyperlink{classGame}{Game} 
+\end{DoxyReturn}
+\hypertarget{classGame_abda2a003c77c17b87c44ab031060367a}{\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+::run (
+\begin{DoxyParamCaption}
+\item[{Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)}}\label{classGame_abda2a003c77c17b87c44ab031060367a}
+Starts the game loop and sends events to the event handler 
+\begin{DoxyParams}{Parameters}
+{\em window} & The game window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the \hyperlink{classPlayer}{Player} is alive and the \hyperlink{classLevel}{Level} has been completed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game.\+h\item 
+game.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{classMovable}{\section{Movable Class Reference}
+\label{classMovable}\index{Movable@{Movable}}
+}
+
+
+Inheritance diagram for Movable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classMovable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Movable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classMovable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMovable_ab8074e1b870b06f5b7a2d93bc9f4a301}{Movable} (int x\+\_\+val, int y\+\_\+val, int wid, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect \&rect, int max\+\_\+hp, int min\+\_\+att, int max\+\_\+att)
+\item 
+\hypertarget{classMovable_a6c90cd27651dcaae3673bf28bb9fa449}{virtual void {\bfseries attack} (\hyperlink{classMovable}{Movable} \&)=0}\label{classMovable_a6c90cd27651dcaae3673bf28bb9fa449}
+
+\item 
+void \hyperlink{classMovable_aa4f081848db7837daa7b6d6af25971bb}{decrease\+Hp} (int damage)
+\item 
+void \hyperlink{classMovable_ad247575b21471febb50f33cad3f7d5af}{heal} ()
+\item 
+virtual bool \hyperlink{classMovable_ad2c29da05cc65237d275e949cb4d6eb9}{active} () const override
+\item 
+void \hyperlink{classMovable_af86996f178b7acd13212d42bb3742c7c}{move} (int x\+\_\+move, int y\+\_\+move)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMovable_a0d351ec6b52976cfb30e811f9466c74c}{int {\bfseries equipment\+\_\+bonus} \{\}}\label{classMovable_a0d351ec6b52976cfb30e811f9466c74c}
+
+\item 
+\hypertarget{classMovable_a33933f3a87bdb382a3971946dec26573}{int {\bfseries max\+\_\+health} \{\}}\label{classMovable_a33933f3a87bdb382a3971946dec26573}
+
+\item 
+\hypertarget{classMovable_acebe27308e28f1a8ef1afc0975903277}{int {\bfseries current\+\_\+health} \{\}}\label{classMovable_acebe27308e28f1a8ef1afc0975903277}
+
+\item 
+\hypertarget{classMovable_ab89bbd5a67c47bc4a9c7f146df34fca5}{int {\bfseries min\+\_\+attack} \{\}}\label{classMovable_ab89bbd5a67c47bc4a9c7f146df34fca5}
+
+\item 
+\hypertarget{classMovable_a979c78acad9247d5d7ed7b7761c96c2f}{int {\bfseries max\+\_\+attack} \{\}}\label{classMovable_a979c78acad9247d5d7ed7b7761c96c2f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMovable_ab8074e1b870b06f5b7a2d93bc9f4a301}{\index{Movable@{Movable}!Movable@{Movable}}
+\index{Movable@{Movable}!Movable@{Movable}}
+\subsubsection[{Movable}]{\setlength{\rightskip}{0pt plus 5cm}Movable\+::\+Movable (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect \&}]{rect, }
+\item[{int}]{max\+\_\+hp, }
+\item[{int}]{min\+\_\+att, }
+\item[{int}]{max\+\_\+att}
+\end{DoxyParamCaption}
+)}}\label{classMovable_ab8074e1b870b06f5b7a2d93bc9f4a301}
+An abstract class for \hyperlink{classMovable}{Movable} objects 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate to spawn the \hyperlink{classMovable}{Movable} at \\
+\hline
+{\em y\+\_\+val} & Y coordinate to spawn the \hyperlink{classMovable}{Movable} at \\
+\hline
+{\em wid} & Width of the \hyperlink{classMovable}{Movable} \\
+\hline
+{\em tex} & Texture used to create the \hyperlink{classMovable}{Movable} sprite \\
+\hline
+{\em rect} & Area of the texture to create the \hyperlink{classMovable}{Movable} sprite from \\
+\hline
+{\em max\+\_\+hp} & Max health points of the \hyperlink{classMovable}{Movable} object \\
+\hline
+{\em min\+\_\+att} & Minimum attack value of the \hyperlink{classMovable}{Movable} object \\
+\hline
+{\em max\+\_\+att} & Maximum attack value of the \hyperlink{classMovable}{Movable} object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMovable_ad2c29da05cc65237d275e949cb4d6eb9}{\index{Movable@{Movable}!active@{active}}
+\index{active@{active}!Movable@{Movable}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}bool Movable\+::active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classMovable_ad2c29da05cc65237d275e949cb4d6eb9}
+Checks if current\+\_\+health is greater than 0 \begin{DoxyReturn}{Returns}
+current\+\_\+health $>$ 0 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classObject}{Object}.
+
+\hypertarget{classMovable_aa4f081848db7837daa7b6d6af25971bb}{\index{Movable@{Movable}!decrease\+Hp@{decrease\+Hp}}
+\index{decrease\+Hp@{decrease\+Hp}!Movable@{Movable}}
+\subsubsection[{decrease\+Hp}]{\setlength{\rightskip}{0pt plus 5cm}void Movable\+::decrease\+Hp (
+\begin{DoxyParamCaption}
+\item[{int}]{damage}
+\end{DoxyParamCaption}
+)}}\label{classMovable_aa4f081848db7837daa7b6d6af25971bb}
+Decreases current\+\_\+health by damage -\/ the value of the variable equipment\+\_\+bonus 
+\begin{DoxyParams}{Parameters}
+{\em damage} & The value to decrease current\+\_\+health by \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMovable_ad247575b21471febb50f33cad3f7d5af}{\index{Movable@{Movable}!heal@{heal}}
+\index{heal@{heal}!Movable@{Movable}}
+\subsubsection[{heal}]{\setlength{\rightskip}{0pt plus 5cm}void Movable\+::heal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMovable_ad247575b21471febb50f33cad3f7d5af}
+Sets current\+\_\+health to the value of max\+\_\+health \hypertarget{classMovable_af86996f178b7acd13212d42bb3742c7c}{\index{Movable@{Movable}!move@{move}}
+\index{move@{move}!Movable@{Movable}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Movable\+::move (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+move, }
+\item[{int}]{y\+\_\+move}
+\end{DoxyParamCaption}
+)}}\label{classMovable_af86996f178b7acd13212d42bb3742c7c}
+Moves the \hyperlink{classMovable}{Movable} x\+\_\+move times its width on the X axis and y\+\_\+move times its width on the Y axis 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+move} & The amount of steps to move on the X axis \\
+\hline
+{\em y\+\_\+move} & The amount of steps to move on the Y axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+movable.\+h\item 
+movable.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="clion005"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clion005">
+				<Option output="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/clion005" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clion005"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clion005/fast">
+				<Option output="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/clion005" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clion005/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/CMakeCCompilerId.c">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdCXX/CMakeCXXCompilerId.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/CMakeFiles/feature_tests.c">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/CMakeFiles/feature_tests.cxx">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/equipment.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/equipment.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/game.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/game.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/game_state.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/game_state.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/goal.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/goal.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/gold.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/gold.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/level.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/level.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/main.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/monster.cc">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/monster.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/movable.cc">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/movable.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/object.cc">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/object.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/player.cc">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/player.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/potion.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/potion.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/treasure.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/treasure.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/wall.cpp">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/wall.h">
+			<Option target="clion005"/>
+		</Unit>
+		<Unit filename="/home/jonma993/uppgifter/TDP005/clion005/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

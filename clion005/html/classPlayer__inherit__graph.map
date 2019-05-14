@@ -1,0 +1,4 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node2" href="$classMovable.html" title="Movable" alt="" coords="18,155,88,181"/>
+<area shape="rect" id="node3" href="$classObject.html" title="Object" alt="" coords="23,80,83,107"/>
+</map>

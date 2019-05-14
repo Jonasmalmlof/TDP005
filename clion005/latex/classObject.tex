@@ -1,0 +1,109 @@
+\hypertarget{classObject}{\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+}
+
+
+Inheritance diagram for Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classObject__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObject_a5f8f752a3b0b7d68f15a5e2ff4d72f3b}{Object} (int x\+\_\+val, int y\+\_\+val, int wid, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect rect)
+\item 
+\hypertarget{classObject_a097a320e7b93b92a27db87bb64bf5a63}{virtual bool {\bfseries active} () const =0}\label{classObject_a097a320e7b93b92a27db87bb64bf5a63}
+
+\item 
+sf\+::\+Sprite \hyperlink{classObject_a7541b5e9de4712cdb604035aaef66882}{get\+Sprite} () const 
+\item 
+virtual void \hyperlink{classObject_acfb343510263d8fb539979442e4e4e26}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States) const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classObject_a65be09abc56e93e0154c3a0e37f97579}{sf\+::\+Sprite {\bfseries sprite} \{\}}\label{classObject_a65be09abc56e93e0154c3a0e37f97579}
+
+\item 
+\hypertarget{classObject_aea8b4e1f4895ce5a0be5dbf42864669c}{int {\bfseries x} \{\}}\label{classObject_aea8b4e1f4895ce5a0be5dbf42864669c}
+
+\item 
+\hypertarget{classObject_a9ed372592e77352c832d721ad88b9aec}{int {\bfseries y} \{\}}\label{classObject_a9ed372592e77352c832d721ad88b9aec}
+
+\item 
+\hypertarget{classObject_a93596e8f620874b99326f8632365c8f5}{int {\bfseries width} \{\}}\label{classObject_a93596e8f620874b99326f8632365c8f5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObject_a5f8f752a3b0b7d68f15a5e2ff4d72f3b}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classObject_a5f8f752a3b0b7d68f15a5e2ff4d72f3b}
+Creates an object with a position, width and sprite 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate for the object \\
+\hline
+{\em y\+\_\+val} & Y coordinate for the object \\
+\hline
+{\em wid} & Width of the object \\
+\hline
+{\em tex} & Texture used to create the sprite \\
+\hline
+{\em rect} & The area of the texture to create the sprite from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classObject_acfb343510263d8fb539979442e4e4e26}{\index{Object@{Object}!draw@{draw}}
+\index{draw@{draw}!Object@{Object}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Object\+::draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Target \&}]{target, }
+\item[{sf\+::\+Render\+States}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classObject_acfb343510263d8fb539979442e4e4e26}
+Draws the Ovject's sprite in the target, implementing this function has the effect that all objects of classes derived from \hyperlink{classObject}{Object} can be sent to a sf\+::\+Render\+Window's draw function directly and be drawn correctly in the window 
+\begin{DoxyParams}{Parameters}
+{\em target} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a7541b5e9de4712cdb604035aaef66882}{\index{Object@{Object}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!Object@{Object}}
+\subsubsection[{get\+Sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Object\+::get\+Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classObject_a7541b5e9de4712cdb604035aaef66882}
+\begin{DoxyReturn}{Returns}
+The sprite variable of the \hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+object.\+h\item 
+object.\+cc\end{DoxyCompactItemize}

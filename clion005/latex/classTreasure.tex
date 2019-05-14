@@ -1,0 +1,108 @@
+\hypertarget{classTreasure}{\section{Treasure Class Reference}
+\label{classTreasure}\index{Treasure@{Treasure}}
+}
+
+
+Inheritance diagram for Treasure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classTreasure__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Treasure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classTreasure__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTreasure_abdc8e911a0a71955c73847dd726964aa}{Treasure} (int x\+\_\+val, int y\+\_\+val, int wid, int val, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect rect)
+\item 
+virtual void \hyperlink{classTreasure_a55f46cc5e888315d78c423e6d0af102d}{collect} (\hyperlink{classPlayer}{Player} \&player)=0
+\item 
+virtual bool \hyperlink{classTreasure_adfa94654619fbe6f193df512e65db083}{active} () const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classTreasure_a8afb4798dba836b0bf27e06e36932dec}{int {\bfseries value} \{\}}\label{classTreasure_a8afb4798dba836b0bf27e06e36932dec}
+
+\item 
+\hypertarget{classTreasure_a08327d05d975fa573f57a1c8887a94dd}{bool {\bfseries collected} \{false\}}\label{classTreasure_a08327d05d975fa573f57a1c8887a94dd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTreasure_abdc8e911a0a71955c73847dd726964aa}{\index{Treasure@{Treasure}!Treasure@{Treasure}}
+\index{Treasure@{Treasure}!Treasure@{Treasure}}
+\subsubsection[{Treasure}]{\setlength{\rightskip}{0pt plus 5cm}Treasure\+::\+Treasure (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{int}]{val, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classTreasure_abdc8e911a0a71955c73847dd726964aa}
+Abstract class for treasure objects 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate of the treasure \\
+\hline
+{\em y\+\_\+val} & Y coordinate of the treasure \\
+\hline
+{\em wid} & Width of the treasure object \\
+\hline
+{\em tex} & Tileset texture to create the sprite from \\
+\hline
+{\em rect} & Area of the tileset to create the sprite from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTreasure_adfa94654619fbe6f193df512e65db083}{\index{Treasure@{Treasure}!active@{active}}
+\index{active@{active}!Treasure@{Treasure}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}bool Treasure\+::active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classTreasure_adfa94654619fbe6f193df512e65db083}
+Returns if the object is active or should be deleted, it determines this by looking at the collected variable and returning the opposite of it, since all collected treasures should be removed from the playing field \begin{DoxyReturn}{Returns}
+!collected 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classObject}{Object}.
+
+\hypertarget{classTreasure_a55f46cc5e888315d78c423e6d0af102d}{\index{Treasure@{Treasure}!collect@{collect}}
+\index{collect@{collect}!Treasure@{Treasure}}
+\subsubsection[{collect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Treasure\+::collect (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classTreasure_a55f46cc5e888315d78c423e6d0af102d}
+Function for collecting a treasure object 
+\begin{DoxyParams}{Parameters}
+{\em player} & The player object that collects the treasure \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classEquipment_ae420383e1e845e886f60ffa6b6c82312}{Equipment}, \hyperlink{classGold_a15403009146df6691835e27bbd5c0299}{Gold}, and \hyperlink{classPotion_a04d02a0c7c4f5dbeb6062d1399a914c8}{Potion}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+treasure.\+h\item 
+treasure.\+cpp\end{DoxyCompactItemize}

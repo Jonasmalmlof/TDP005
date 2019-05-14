@@ -1,0 +1,43 @@
+\hypertarget{classGame__State}{\section{Game\+\_\+\+State Class Reference}
+\label{classGame__State}\index{Game\+\_\+\+State@{Game\+\_\+\+State}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGame__State_a8104ef051de61662ee5aef3f63c5d331}{Game\+\_\+\+State} ()
+\item 
+void \hyperlink{classGame__State_ab7ed16a10be9803ced8fee68e65085a1}{run} (sf\+::\+Render\+Window \&window)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGame__State_a8104ef051de61662ee5aef3f63c5d331}{\index{Game\+\_\+\+State@{Game\+\_\+\+State}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\index{Game\+\_\+\+State@{Game\+\_\+\+State}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection[{Game\+\_\+\+State}]{\setlength{\rightskip}{0pt plus 5cm}Game\+\_\+\+State\+::\+Game\+\_\+\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGame__State_a8104ef051de61662ee5aef3f63c5d331}
+Creates a \hyperlink{classGame__State}{Game\+\_\+\+State} that starts on level 1 and currently a total of 3 levels 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGame__State_ab7ed16a10be9803ced8fee68e65085a1}{\index{Game\+\_\+\+State@{Game\+\_\+\+State}!run@{run}}
+\index{run@{run}!Game\+\_\+\+State@{Game\+\_\+\+State}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+\_\+\+State\+::run (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)}}\label{classGame__State_ab7ed16a10be9803ced8fee68e65085a1}
+Starts the game loop, creating \hyperlink{classGame}{Game} objects until the player dies or the player has completed all available levels 
+\begin{DoxyParams}{Parameters}
+{\em window} & The window where the game is run \\
+\hline
+\end{DoxyParams}
+If \hyperlink{classGame_abda2a003c77c17b87c44ab031060367a}{Game\+::run} returns false it means that the player has died or if the user has tried to close the window, which tells \hyperlink{classGame__State}{Game\+\_\+\+State} that the next level shouldn't be loaded
+
+If the level is completed \hyperlink{classGame__State}{Game\+\_\+\+State} saves the player stats and loads them into the next level
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game\+\_\+state.\+h\item 
+game\+\_\+state.\+cpp\end{DoxyCompactItemize}

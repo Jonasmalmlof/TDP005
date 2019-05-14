@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classObject.html" title="Object" alt="" coords="131,81,191,108"/>
+<area shape="rect" id="node3" href="$classGoal.html" title="Goal" alt="" coords="253,5,302,32"/>
+<area shape="rect" id="node4" href="$classMovable.html" title="Movable" alt="" coords="242,56,313,83"/>
+<area shape="rect" id="node7" href="$classTreasure.html" title="Treasure" alt="" coords="241,107,314,133"/>
+<area shape="rect" id="node11" href="$classWall.html" title="Wall" alt="" coords="253,157,301,184"/>
+<area shape="rect" id="node5" href="$classMonster.html" title="Monster" alt="" coords="371,5,440,32"/>
+<area shape="rect" id="node6" href="$classPlayer.html" title="Player" alt="" coords="376,56,435,83"/>
+<area shape="rect" id="node8" href="$classEquipment.html" title="Equipment" alt="" coords="363,107,447,133"/>
+<area shape="rect" id="node9" href="$classGold.html" title="Gold" alt="" coords="381,157,430,184"/>
+<area shape="rect" id="node10" href="$classPotion.html" title="Potion" alt="" coords="376,208,435,235"/>
+</map>

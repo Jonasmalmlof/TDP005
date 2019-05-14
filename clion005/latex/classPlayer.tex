@@ -1,0 +1,236 @@
+\hypertarget{classPlayer}{\section{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+}
+
+
+Inheritance diagram for Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classPlayer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayer_a3d096a675cddfcb4d2f74201bf7e3422}{Player} (int x\+\_\+val, int y\+\_\+val, int wid, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect \&rect, int max\+\_\+hp, int min\+\_\+att, int max\+\_\+att)
+\item 
+virtual void \hyperlink{classPlayer_a8135c6f5b7c11fa3aa1c801d0219356a}{attack} (\hyperlink{classMovable}{Movable} \&mov) override
+\item 
+void \hyperlink{classPlayer_ab68186aa09a4b86263ec6b238b7d75c4}{increase\+Score} (int sco)
+\item 
+void \hyperlink{classPlayer_a5de85f52562c1630b8eba16f8384cc5a}{increase\+Experience} (int exp)
+\item 
+void \hyperlink{classPlayer_a4ccbbd0bf0c7a811c7765ea1b8d83240}{equip\+Treasure} (int val)
+\item 
+int \hyperlink{classPlayer_ac10eb9fb0387f565134958d129585ac6}{get\+Score} () const 
+\item 
+int \hyperlink{classPlayer_a54051098b038fa4d040b5d316fb3587a}{get\+Experience\+Points} () const 
+\item 
+int \hyperlink{classPlayer_a3042adb49808b2629137f4d85b6b5fd3}{get\+Health} () const 
+\item 
+int \hyperlink{classPlayer_ac963622d4c47bd62f142fa1bc34d39f9}{get\+Max\+Health} () const 
+\item 
+int \hyperlink{classPlayer_a9a41d6af9786e15212a821072b0395b2}{get\+Level} () const 
+\item 
+void \hyperlink{classPlayer_a16abe3e019dec51bdcfb3175c6721ce5}{set\+Level} (int val)
+\item 
+void \hyperlink{classPlayer_a71f00c57a2c8490d1f2716e9cf8ed172}{set\+Experience} (int exp)
+\item 
+void \hyperlink{classPlayer_adac972269da71038ba2442d9323b5c16}{set\+Score} (int sco)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlayer_a3d096a675cddfcb4d2f74201bf7e3422}{\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{Player}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::\+Player (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect \&}]{rect, }
+\item[{int}]{max\+\_\+hp, }
+\item[{int}]{min\+\_\+att, }
+\item[{int}]{max\+\_\+att}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a3d096a675cddfcb4d2f74201bf7e3422}
+The player object that the player can control 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate to spawn the player at \\
+\hline
+{\em y\+\_\+val} & Y coordinate to spawn the player at \\
+\hline
+{\em wid} & Width of the player object \\
+\hline
+{\em tex} & Texture used to create the player sprite \\
+\hline
+{\em rect} & Area of the texture to create the player sprite from \\
+\hline
+{\em max\+\_\+hp} & Max health points of the player object \\
+\hline
+{\em min\+\_\+att} & Minimum attack value of the player object \\
+\hline
+{\em max\+\_\+att} & Maximum attack value of the player object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlayer_a8135c6f5b7c11fa3aa1c801d0219356a}{\index{Player@{Player}!attack@{attack}}
+\index{attack@{attack}!Player@{Player}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::attack (
+\begin{DoxyParamCaption}
+\item[{{\bf Movable} \&}]{mov}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classPlayer_a8135c6f5b7c11fa3aa1c801d0219356a}
+Generates a value based on the player's min\+\_\+attack, max\+\_\+attack and level variables. This value is doubled if a critical hit is generated, the value is then passed to mov's decrease\+H\+P function. 
+\begin{DoxyParams}{Parameters}
+{\em mov} & \hyperlink{classMovable}{Movable} attacked by the player. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMovable}{Movable}.
+
+\hypertarget{classPlayer_a4ccbbd0bf0c7a811c7765ea1b8d83240}{\index{Player@{Player}!equip\+Treasure@{equip\+Treasure}}
+\index{equip\+Treasure@{equip\+Treasure}!Player@{Player}}
+\subsubsection[{equip\+Treasure}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::equip\+Treasure (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a4ccbbd0bf0c7a811c7765ea1b8d83240}
+Increases the equipment\+\_\+bonus variable with the value of val 
+\begin{DoxyParams}{Parameters}
+{\em val} & The value used to increase the equipment\+\_\+bonus variable \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_a54051098b038fa4d040b5d316fb3587a}{\index{Player@{Player}!get\+Experience\+Points@{get\+Experience\+Points}}
+\index{get\+Experience\+Points@{get\+Experience\+Points}!Player@{Player}}
+\subsubsection[{get\+Experience\+Points}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+::get\+Experience\+Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPlayer_a54051098b038fa4d040b5d316fb3587a}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classPlayer}{Player} experience\+\_\+points variable 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a3042adb49808b2629137f4d85b6b5fd3}{\index{Player@{Player}!get\+Health@{get\+Health}}
+\index{get\+Health@{get\+Health}!Player@{Player}}
+\subsubsection[{get\+Health}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+::get\+Health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPlayer_a3042adb49808b2629137f4d85b6b5fd3}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classPlayer}{Player} current\+\_\+health variable 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a9a41d6af9786e15212a821072b0395b2}{\index{Player@{Player}!get\+Level@{get\+Level}}
+\index{get\+Level@{get\+Level}!Player@{Player}}
+\subsubsection[{get\+Level}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+::get\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPlayer_a9a41d6af9786e15212a821072b0395b2}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classPlayer}{Player} level variable 
+\end{DoxyReturn}
+\hypertarget{classPlayer_ac963622d4c47bd62f142fa1bc34d39f9}{\index{Player@{Player}!get\+Max\+Health@{get\+Max\+Health}}
+\index{get\+Max\+Health@{get\+Max\+Health}!Player@{Player}}
+\subsubsection[{get\+Max\+Health}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+::get\+Max\+Health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPlayer_ac963622d4c47bd62f142fa1bc34d39f9}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classPlayer}{Player} max\+\_\+health variable 
+\end{DoxyReturn}
+\hypertarget{classPlayer_ac10eb9fb0387f565134958d129585ac6}{\index{Player@{Player}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!Player@{Player}}
+\subsubsection[{get\+Score}]{\setlength{\rightskip}{0pt plus 5cm}int Player\+::get\+Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPlayer_ac10eb9fb0387f565134958d129585ac6}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classPlayer}{Player} score variable 
+\end{DoxyReturn}
+\hypertarget{classPlayer_a5de85f52562c1630b8eba16f8384cc5a}{\index{Player@{Player}!increase\+Experience@{increase\+Experience}}
+\index{increase\+Experience@{increase\+Experience}!Player@{Player}}
+\subsubsection[{increase\+Experience}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::increase\+Experience (
+\begin{DoxyParamCaption}
+\item[{int}]{exp}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a5de85f52562c1630b8eba16f8384cc5a}
+Increases the experience\+\_\+points variable with the value of exp 
+\begin{DoxyParams}{Parameters}
+{\em exp} & The value used to increase the experience\+\_\+points variable \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_ab68186aa09a4b86263ec6b238b7d75c4}{\index{Player@{Player}!increase\+Score@{increase\+Score}}
+\index{increase\+Score@{increase\+Score}!Player@{Player}}
+\subsubsection[{increase\+Score}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::increase\+Score (
+\begin{DoxyParamCaption}
+\item[{int}]{sco}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_ab68186aa09a4b86263ec6b238b7d75c4}
+Increases the score variable with the value of sco 
+\begin{DoxyParams}{Parameters}
+{\em sco} & The value used to increase the score variable \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_a71f00c57a2c8490d1f2716e9cf8ed172}{\index{Player@{Player}!set\+Experience@{set\+Experience}}
+\index{set\+Experience@{set\+Experience}!Player@{Player}}
+\subsubsection[{set\+Experience}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::set\+Experience (
+\begin{DoxyParamCaption}
+\item[{int}]{exp}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a71f00c57a2c8490d1f2716e9cf8ed172}
+Sets the experience\+\_\+points variable to exp 
+\begin{DoxyParams}{Parameters}
+{\em exp} & Value used to set the value of experience\+\_\+points \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_a16abe3e019dec51bdcfb3175c6721ce5}{\index{Player@{Player}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!Player@{Player}}
+\subsubsection[{set\+Level}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::set\+Level (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_a16abe3e019dec51bdcfb3175c6721ce5}
+Sets the player level to val, and current\+\_\+health and max\+\_\+health to 90 + 10 $\ast$ val 
+\begin{DoxyParams}{Parameters}
+{\em val} & Value used to set the player level \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlayer_adac972269da71038ba2442d9323b5c16}{\index{Player@{Player}!set\+Score@{set\+Score}}
+\index{set\+Score@{set\+Score}!Player@{Player}}
+\subsubsection[{set\+Score}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::set\+Score (
+\begin{DoxyParamCaption}
+\item[{int}]{sco}
+\end{DoxyParamCaption}
+)}}\label{classPlayer_adac972269da71038ba2442d9323b5c16}
+Sets the score variable to sco 
+\begin{DoxyParams}{Parameters}
+{\em sco} & Value used to set the value of score \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+player.\+h\item 
+player.\+cc\end{DoxyCompactItemize}

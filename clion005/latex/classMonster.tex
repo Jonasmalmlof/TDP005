@@ -1,0 +1,116 @@
+\hypertarget{classMonster}{\section{Monster Class Reference}
+\label{classMonster}\index{Monster@{Monster}}
+}
+
+
+Inheritance diagram for Monster\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classMonster__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Monster\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classMonster__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMonster_a975fd20f80f83dbc5dfc7bbcf5cb4cda}{Monster} (int x\+\_\+val, int y\+\_\+val, int wix, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect \&rect, int max\+\_\+hp, int min\+\_\+att, int max\+\_\+att, std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ route)
+\item 
+void \hyperlink{classMonster_a29d08fe330b6cad13e614693f1f3e16f}{move} ()
+\item 
+sf\+::\+Float\+Rect \hyperlink{classMonster_a1a595dfe12931dcd0ec4dbf41c8d22cc}{get\+Sight\+Box} () const 
+\item 
+virtual void \hyperlink{classMonster_a4185a3f93c9a4bdd9fa8caf95ffedab8}{attack} (\hyperlink{classMovable}{Movable} \&mov) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMonster_a975fd20f80f83dbc5dfc7bbcf5cb4cda}{\index{Monster@{Monster}!Monster@{Monster}}
+\index{Monster@{Monster}!Monster@{Monster}}
+\subsubsection[{Monster}]{\setlength{\rightskip}{0pt plus 5cm}Monster\+::\+Monster (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wix, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect \&}]{rect, }
+\item[{int}]{max\+\_\+hp, }
+\item[{int}]{min\+\_\+att, }
+\item[{int}]{max\+\_\+att, }
+\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$$>$}]{route}
+\end{DoxyParamCaption}
+)}}\label{classMonster_a975fd20f80f83dbc5dfc7bbcf5cb4cda}
+A \hyperlink{classMonster}{Monster} object that patrols the level after a set cyclic route 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate to spawn the player at \\
+\hline
+{\em y\+\_\+val} & Y coordinate to spawn the player at \\
+\hline
+{\em wid} & Width of the player object \\
+\hline
+{\em tex} & Texture used to create the player sprite \\
+\hline
+{\em rect} & Area of the texture to create the player sprite from \\
+\hline
+{\em max\+\_\+hp} & Max health points of the player object \\
+\hline
+{\em min\+\_\+att} & Minimum attack value of the player object \\
+\hline
+{\em max\+\_\+att} & Maximum attack value of the player object \\
+\hline
+{\em route} & The route the \hyperlink{classMonster}{Monster} will patrol \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMonster_a4185a3f93c9a4bdd9fa8caf95ffedab8}{\index{Monster@{Monster}!attack@{attack}}
+\index{attack@{attack}!Monster@{Monster}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}void Monster\+::attack (
+\begin{DoxyParamCaption}
+\item[{{\bf Movable} \&}]{mov}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classMonster_a4185a3f93c9a4bdd9fa8caf95ffedab8}
+Generates a value based on the \hyperlink{classMonster}{Monster}'s min\+\_\+attack and max\+\_\+attack variables. This value is doubled if a critical hit is generated, the value is then passed to mov's decrease\+H\+P function. 
+\begin{DoxyParams}{Parameters}
+{\em mov} & \hyperlink{classMovable}{Movable} attacked by the \hyperlink{classMonster}{Monster}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classMovable}{Movable}.
+
+\hypertarget{classMonster_a1a595dfe12931dcd0ec4dbf41c8d22cc}{\index{Monster@{Monster}!get\+Sight\+Box@{get\+Sight\+Box}}
+\index{get\+Sight\+Box@{get\+Sight\+Box}!Monster@{Monster}}
+\subsubsection[{get\+Sight\+Box}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Float\+Rect Monster\+::get\+Sight\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classMonster_a1a595dfe12931dcd0ec4dbf41c8d22cc}
+Returns a Float\+Rect 3 times the \hyperlink{classMonster}{Monster}'s size surrounding it. Simple illustration, S is a part of the sight box while M is the \hyperlink{classMonster}{Monster} itself\+: S\+S\+S S\+M\+S S\+S\+S \begin{DoxyReturn}{Returns}
+A Float\+Rect representing the \hyperlink{classMonster}{Monster} object's sight box 
+\end{DoxyReturn}
+\hypertarget{classMonster_a29d08fe330b6cad13e614693f1f3e16f}{\index{Monster@{Monster}!move@{move}}
+\index{move@{move}!Monster@{Monster}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Monster\+::move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMonster_a29d08fe330b6cad13e614693f1f3e16f}
+Moves the \hyperlink{classMonster}{Monster} to the next step of its patrol route unless the player intersects with the \hyperlink{classMonster}{Monster}'s sight box. The \hyperlink{classMonster}{Monster}'s sight box reaches one time the \hyperlink{classMonster}{Monster} object's width in all 8 directions. Step is the variable for which part of the patrol the monster is on, if the monster has completed its route step is set to 0 and the patrol resets
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+monster.\+h\item 
+monster.\+cc\end{DoxyCompactItemize}

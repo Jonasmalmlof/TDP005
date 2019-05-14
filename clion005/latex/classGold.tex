@@ -1,0 +1,86 @@
+\hypertarget{classGold}{\section{Gold Class Reference}
+\label{classGold}\index{Gold@{Gold}}
+}
+
+
+Inheritance diagram for Gold\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classGold__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gold\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classGold__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGold_af4b58417b81cbc1632d5a15b8a4e125c}{Gold} (int x\+\_\+val, int y\+\_\+val, int wid, int val, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect rect)
+\item 
+virtual void \hyperlink{classGold_a15403009146df6691835e27bbd5c0299}{collect} (\hyperlink{classPlayer}{Player} \&player) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGold_af4b58417b81cbc1632d5a15b8a4e125c}{\index{Gold@{Gold}!Gold@{Gold}}
+\index{Gold@{Gold}!Gold@{Gold}}
+\subsubsection[{Gold}]{\setlength{\rightskip}{0pt plus 5cm}Gold\+::\+Gold (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{int}]{val, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classGold_af4b58417b81cbc1632d5a15b8a4e125c}
+\hyperlink{classGold}{Gold} chests the player can collect to increase the score 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate of the gold chest \\
+\hline
+{\em y\+\_\+val} & Y coordinate of the gold chest \\
+\hline
+{\em wid} & Width of the gold chest object \\
+\hline
+{\em val} & The value used to increase the score \\
+\hline
+{\em tex} & Tileset texture to create the sprite from \\
+\hline
+{\em rect} & Area of the tileset to create the sprite from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGold_a15403009146df6691835e27bbd5c0299}{\index{Gold@{Gold}!collect@{collect}}
+\index{collect@{collect}!Gold@{Gold}}
+\subsubsection[{collect}]{\setlength{\rightskip}{0pt plus 5cm}void Gold\+::collect (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classGold_a15403009146df6691835e27bbd5c0299}
+Collects the treasure and increases player's score based on the \hyperlink{classGold}{Gold} object's value variable 
+\begin{DoxyParams}{Parameters}
+{\em player} & The \hyperlink{classPlayer}{Player} collecting the \hyperlink{classGold}{Gold} object \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classTreasure_a55f46cc5e888315d78c423e6d0af102d}{Treasure}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gold.\+h\item 
+gold.\+cpp\end{DoxyCompactItemize}

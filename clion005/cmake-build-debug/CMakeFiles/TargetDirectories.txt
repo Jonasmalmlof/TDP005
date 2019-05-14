@@ -1,0 +1,3 @@
+/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jonma993/uppgifter/TDP005/clion005/cmake-build-debug/CMakeFiles/clion005.dir

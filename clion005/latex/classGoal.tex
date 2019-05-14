@@ -1,0 +1,99 @@
+\hypertarget{classGoal}{\section{Goal Class Reference}
+\label{classGoal}\index{Goal@{Goal}}
+}
+
+
+Inheritance diagram for Goal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classGoal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Goal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classGoal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGoal_a579c482283005118e153af04d12d6326}{Goal} (int x\+\_\+val, int y\+\_\+val, int wid, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect rect)
+\item 
+virtual bool \hyperlink{classGoal_ad23408eab330967a7fe0d13e580c667a}{active} () const override
+\item 
+void \hyperlink{classGoal_a4126af8f725af061df89124c1d9d2dfb}{end\+Game} ()
+\item 
+void \hyperlink{classGoal_adee29e993c9b988bd0cc15a12c86452d}{change\+Sprite} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGoal_a579c482283005118e153af04d12d6326}{\index{Goal@{Goal}!Goal@{Goal}}
+\index{Goal@{Goal}!Goal@{Goal}}
+\subsubsection[{Goal}]{\setlength{\rightskip}{0pt plus 5cm}Goal\+::\+Goal (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classGoal_a579c482283005118e153af04d12d6326}
+Creates a goal object that knows if the 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & \\
+\hline
+{\em y\+\_\+val} & \\
+\hline
+{\em wid} & \\
+\hline
+{\em tex} & \\
+\hline
+{\em rect} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGoal_ad23408eab330967a7fe0d13e580c667a}{\index{Goal@{Goal}!active@{active}}
+\index{active@{active}!Goal@{Goal}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}bool Goal\+::active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classGoal_ad23408eab330967a7fe0d13e580c667a}
+Checks if the level has been completed, either by the player dying or the player completing the level \begin{DoxyReturn}{Returns}
+The value of finished 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classObject}{Object}.
+
+\hypertarget{classGoal_adee29e993c9b988bd0cc15a12c86452d}{\index{Goal@{Goal}!change\+Sprite@{change\+Sprite}}
+\index{change\+Sprite@{change\+Sprite}!Goal@{Goal}}
+\subsubsection[{change\+Sprite}]{\setlength{\rightskip}{0pt plus 5cm}void Goal\+::change\+Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGoal_adee29e993c9b988bd0cc15a12c86452d}
+Changes the sprite to the open door sprite when the level is cleared of monsters and treasures \hypertarget{classGoal_a4126af8f725af061df89124c1d9d2dfb}{\index{Goal@{Goal}!end\+Game@{end\+Game}}
+\index{end\+Game@{end\+Game}!Goal@{Goal}}
+\subsubsection[{end\+Game}]{\setlength{\rightskip}{0pt plus 5cm}void Goal\+::end\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGoal_a4126af8f725af061df89124c1d9d2dfb}
+Sets the finished variable to true 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+goal.\+h\item 
+goal.\+cpp\end{DoxyCompactItemize}

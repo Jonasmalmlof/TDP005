@@ -1,0 +1,86 @@
+\hypertarget{classEquipment}{\section{Equipment Class Reference}
+\label{classEquipment}\index{Equipment@{Equipment}}
+}
+
+
+Inheritance diagram for Equipment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classEquipment__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Equipment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classEquipment__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEquipment_ae25b815e5d106e2053050da7818fd277}{Equipment} (int x\+\_\+val, int y\+\_\+val, int wid, int val, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect rect)
+\item 
+virtual void \hyperlink{classEquipment_ae420383e1e845e886f60ffa6b6c82312}{collect} (\hyperlink{classPlayer}{Player} \&player) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEquipment_ae25b815e5d106e2053050da7818fd277}{\index{Equipment@{Equipment}!Equipment@{Equipment}}
+\index{Equipment@{Equipment}!Equipment@{Equipment}}
+\subsubsection[{Equipment}]{\setlength{\rightskip}{0pt plus 5cm}Equipment\+::\+Equipment (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{int}]{val, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classEquipment_ae25b815e5d106e2053050da7818fd277}
+\hyperlink{classEquipment}{Equipment} the player can collect to increase damage given and decrease damage taken 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate of the equipment \\
+\hline
+{\em y\+\_\+val} & Y coordinate of the equipment \\
+\hline
+{\em wid} & Width of the equipment object \\
+\hline
+{\em val} & Value used to increase/decrease damage \\
+\hline
+{\em tex} & Tileset texture to create the sprite from \\
+\hline
+{\em rect} & Area of the tileset to create the sprite from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEquipment_ae420383e1e845e886f60ffa6b6c82312}{\index{Equipment@{Equipment}!collect@{collect}}
+\index{collect@{collect}!Equipment@{Equipment}}
+\subsubsection[{collect}]{\setlength{\rightskip}{0pt plus 5cm}void Equipment\+::collect (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classEquipment_ae420383e1e845e886f60ffa6b6c82312}
+Calls on player's equip\+Treasure function with the equipment object's value variable as its parameter 
+\begin{DoxyParams}{Parameters}
+{\em player} & The player object that collects the equipment \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classTreasure_a55f46cc5e888315d78c423e6d0af102d}{Treasure}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+equipment.\+h\item 
+equipment.\+cpp\end{DoxyCompactItemize}

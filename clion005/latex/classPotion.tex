@@ -1,0 +1,86 @@
+\hypertarget{classPotion}{\section{Potion Class Reference}
+\label{classPotion}\index{Potion@{Potion}}
+}
+
+
+Inheritance diagram for Potion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPotion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Potion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classPotion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPotion_a5dbf5d8ebfa702f529feca08359e7105}{Potion} (int x\+\_\+val, int y\+\_\+val, int wid, int val, sf\+::\+Texture \&tex, sf\+::\+Int\+Rect rect)
+\item 
+virtual void \hyperlink{classPotion_a04d02a0c7c4f5dbeb6062d1399a914c8}{collect} (\hyperlink{classPlayer}{Player} \&player) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPotion_a5dbf5d8ebfa702f529feca08359e7105}{\index{Potion@{Potion}!Potion@{Potion}}
+\index{Potion@{Potion}!Potion@{Potion}}
+\subsubsection[{Potion}]{\setlength{\rightskip}{0pt plus 5cm}Potion\+::\+Potion (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+\_\+val, }
+\item[{int}]{y\+\_\+val, }
+\item[{int}]{wid, }
+\item[{int}]{val, }
+\item[{sf\+::\+Texture \&}]{tex, }
+\item[{sf\+::\+Int\+Rect}]{rect}
+\end{DoxyParamCaption}
+)}}\label{classPotion_a5dbf5d8ebfa702f529feca08359e7105}
+A potion the player can collect to restore themselves to full health 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+val} & X coordinate of the potion \\
+\hline
+{\em y\+\_\+val} & Y coordinate of the potion \\
+\hline
+{\em wid} & Width of the potion object \\
+\hline
+{\em val} & Value used to increase the score of the player object \\
+\hline
+{\em tex} & Tileset texture to create the sprite from \\
+\hline
+{\em rect} & Area of the tileset to create the sprite from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPotion_a04d02a0c7c4f5dbeb6062d1399a914c8}{\index{Potion@{Potion}!collect@{collect}}
+\index{collect@{collect}!Potion@{Potion}}
+\subsubsection[{collect}]{\setlength{\rightskip}{0pt plus 5cm}void Potion\+::collect (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} \&}]{player}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classPotion_a04d02a0c7c4f5dbeb6062d1399a914c8}
+Heals the \hyperlink{classPlayer}{Player} object player and sets the \hyperlink{classPotion}{Potion} object's collected variable to true 
+\begin{DoxyParams}{Parameters}
+{\em player} & The player object that collected the potion \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classTreasure_a55f46cc5e888315d78c423e6d0af102d}{Treasure}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+potion.\+h\item 
+potion.\+cpp\end{DoxyCompactItemize}
