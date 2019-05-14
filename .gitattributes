@@ -1,4 +1,4 @@
 clion005/* linguist-vendored=false
-clion005/CMakeLists.txt linguist-vendored=false
-clion005/cmake-build-debug/* linguist-vendored=false
+clion005/CMakeLists.txt linguist-vendored
+clion005/cmake-build-debug/* linguist-vendored
 Documents/* linguist-vendored
